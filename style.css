@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #333;
+    color: rgb(245, 229, 238);
+}
+h2{
+    font-weight: 200;
+    font-size: 45px;
+    margin: 10PX;
+}
+h2 span{
+    font-size: 30px;
+}
+p{
+    font-size: 20px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    grid-gap: 8px;
+}
+.container > div{
+    cursor: pointer;
+    height: 140px;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+}
+
+
+
+.container > div:nth-of-type(1){
+grid-column: 1/3;
+}
+
+.container > div:nth-of-type(6){
+    grid-column: 3/5;
+    }
+
+.container > div:nth-of-type(9){
+        grid-column: 3/5;
+        }
+
+.container > div:nth-of-type(10){
+            grid-column: 1/3;
+        }
+.bg-1{
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAyJE5j_EWU-zkSfpGK-9_x_MEbJ_W3_fuow&usqp=CAU");
+}
+.bg-2{
+    background: url("https://c4.wallpaperflare.com/wallpaper/764/505/66/baby-groot-4k-hd-superheroes-wallpaper-preview.jpg");
+}
+.container > div:hover{
+    opacity:0.7 ;
+    transform: scale(0.98);
+}
